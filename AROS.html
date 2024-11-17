@@ -1,0 +1,258 @@
+<div class="grid table_trade">
+<!--     <div class="label">직업</div>
+    <div class="avatar"><img name="attr_character_avatar"></div>
+ -->
+    <div class="avatar"><img name="attr_character_avatar"></div>
+    <div class="field pad3030"><input type="checkbox" name="attr_trait0_chk" checked></div>
+    <div class="field"><input type="text" name="attr_trait0_name" value="초기 물품"></div>
+    <div class="field"><input type="text" name="attr_trait0"></div>
+    <div class="field pad3030">👜</div>
+    <div class="field pad3030"><input type="checkbox" name="attr_trait1_chk" checked></div>
+    <div class="field"><input type="text" name="attr_trait1_name"></div>
+    <div class="field"><textarea name="attr_trait1_desc"></div>
+    <div class="field pad3030">💬</div>
+    <div class="field pad3030"><input type="checkbox" name="attr_trait2_chk"></div>
+    <div class="field"><input type="text" name="attr_trait2_name"></div>
+    <div class="field"><textarea name="attr_trait2_desc"></div>
+    <div class="field pad3030">💬</div>
+    <div class="field pad3030"><input type="checkbox" name="attr_trait3_chk"></div>
+    <div class="field"><input type="text" name="attr_trait3_name"></div>
+    <div class="field"><textarea name="attr_trait3_desc"></div>
+    <div class="field pad3030">💬</div>
+    <div class="field pad3030"><input type="checkbox" name="attr_trait4_chk"></div>
+    <div class="field"><input type="text" name="attr_trait4_name"></div>
+    <div class="field"><textarea name="attr_trait4_desc"></div>
+    <div class="field pad3030">💬</div>
+    <div class="field pad3030"><input type="checkbox" name="attr_trait5_chk"></div>
+    <div class="field"><input type="text" name="attr_trait5_name"></div>   
+    <div class="field"><textarea name="attr_trait5_desc"></div>
+    <div class="field pad3030">💬</div>
+</div>
+<div class="spacing">&nbsp;</div>
+<div class="grid table_info">
+    <div class="label">플레이어</div>
+    <div class="label">가문 이름</div>
+    <div class="label"><span class="spacing">&nbsp;</span></div>
+    <div class="label">레벨</div>
+    <div class="label">경험치</div>
+    <div class="label">HP</div>
+    <div class="label">사기</div>
+    <div class="field"><input type="text" name="attr_player"></div>
+    <div class="field"><input type="text" name="pad3030"></div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_level"></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_exp"></div>
+    <div class="field"><input type="number" id="num" min="-1" max="10" name="attr_hp"></div>
+    <div class="field"><input type="number" id="num" min="0" max="20" name="attr_morale"></div>
+</div>
+<div class="spacing"><span class="spacing">&nbsp;</span></div>
+<div class="grid table_stats">
+    <div class="label">능력치</div>
+    <div class="label">능력치 보너스</div>
+    <div class="label">능력치 방어도</div>
+    <div class="label">극복 판정</div>
+    <div class="label"><span class="spacing">&nbsp;</span></div>
+    <div class="label">갑옷</div>
+    <div class="label">방어도</div>
+    <div class="label">투구</div>
+    <div class="label">방패</div>
+    <div class="field pad3030">근력</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_str"></span></div>
+    <div class="field"><input type="number" id="num" name="attr_def_str"></span></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="field"><input type="text" name="attr_eq_armor"></div>
+    <div class="field"><input type="number" id="num_s" min="0" max="20" name="attr_def_armor"></div>
+    <div class="field"><input type="radio" value="1" name="attr_helmet">있 <input type="radio" value="0" name="attr_helmet">없</div>
+    <div class="field"><input type="radio" value="1" name="attr_shield">있 <input type="radio" value="0" name="attr_shield">없</div>
+</div>
+<div class="grid table_stats">
+    <div class="field pad3030">민첩</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_dex"></span></div>
+    <div class="field"><input type="number" id="num" name="attr_def_dex"></span></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="label">무기</div>
+    <div class="label">보너스</div>
+    <div class="label">피해</div>
+    <div class="label">공격 판정</div>
+    <div class="field pad3030">건강</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_con"></span></div>
+    <div class="field"><input type="number" id="num" name="attr_def_con"></span></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="field"><input type="text" name="attr_eq_wp1"></div>
+    <div class="field"><input type="number" id="num_s" min="1" max="10" name="attr_atkbonus_wp1"></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_atkdamage_wp1"></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field pad3030">지능</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_int"></span></div>
+    <div class="field"><input type="number" id="num" name="attr_def_int"></span></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="field"><input type="text" name="attr_eq_wp2"></div>
+    <div class="field"><input type="number" id="num_s" min="1" max="10" name="attr_atkbonus_wp2"></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_atkdamage_wp2"></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field pad3030">지혜</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_wis"></span></div>
+    <div class="field"><input type="number" id="num" name="attr_def_wis"></span></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="field"><input type="text" name="attr_eq_wp3"></div>
+    <div class="field"><input type="number" id="num_s" min="1" max="10" name="attr_atkbonus_wp3"></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_atkdamage_wp3"></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field pad3030">매력</span></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_cha"></span></div>
+    <div class="field"><input type="number" id="num" name="attr_def_cha"></span></div>
+    <div class="field">🎲/🎲🎲</div>
+    <div class="field"><span class="spacing">&nbsp;</span></div>
+    <div class="field"><input type="text" name="attr_eq_wp4"></div>
+    <div class="field"><input type="number" id="num_s" min="1" max="10" name="attr_atkbonus_wp4"></div>
+    <div class="field"><input type="number" id="num" min="1" max="10" name="attr_atkdamage_wp4"></div>
+    <div class="field">🎲/🎲🎲</div>
+</div>
+<div class="spacing"><span class="spacing">&nbsp;</span></div>
+<div class="grid table_items">
+    <div class="label">칸</div>
+    <div class="label">물품</div>
+    <div class="label">품질/수량/충전</div>
+    <div class="label">선언</div>
+    <div class="field pad3030">1</div>
+    <div class="field"><textarea name="attr_item_name_1"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_1"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">2</div>    
+    <div class="field"><textarea name="attr_item_name_2"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_2"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">3</div>    
+    <div class="field"><textarea name="attr_item_name_3"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_3"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">4</div>    
+    <div class="field"><textarea name="attr_item_name_4"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_4"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">5</div>    
+    <div class="field"><textarea name="attr_item_name_5"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_5"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">6</div>    
+    <div class="field"><textarea name="attr_item_name_6"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_6"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">7</div>    
+    <div class="field"><textarea name="attr_item_name_7"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_7"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">8</div>    
+    <div class="field"><textarea name="attr_item_name_8"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_8"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">9</div>    
+    <div class="field"><textarea name="attr_item_name_9"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_9"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">10</div>    
+    <div class="field"><textarea name="attr_item_name_10"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_10"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">11</div>    
+    <div class="field"><textarea name="attr_item_name_11"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_11"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">12</div>  
+    <div class="field"><textarea name="attr_item_name_12"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_12"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">13</div>    
+    <div class="field"><textarea name="attr_item_name_13"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_13"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">14</div>    
+    <div class="field"><textarea name="attr_item_name_14"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_14"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">15</div>    
+    <div class="field"><textarea name="attr_item_name_15"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_15"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">16</div>    
+    <div class="field"><textarea name="attr_item_name_16"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_16"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">17</div>    
+    <div class="field"><textarea name="attr_item_name_17"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_17"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">18</div>    
+    <div class="field"><textarea name="attr_item_name_18"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_18"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">19</div>    
+    <div class="field"><textarea name="attr_item_name_19"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_19"></div>
+    <div class="field">💬</div>
+    <div class="field pad3030">20</div>    
+    <div class="field"><textarea name="attr_item_name_20"></div>
+    <div class="field"><input type="number" id="num" min="0" name="attr_item_qty_20"></div>
+    <div class="field">💬</div>
+</div>
+<script type="text/worker">
+on("change:str", function() {
+    getAttrs(["str"], function(values) {
+        let bonstr = parseInt(values.str)||0;
+        let defstr = bonstr + 10;
+        setAttrs ({
+            def_str: defstr
+        });
+    });
+});
+on("change:dex", function() {
+    getAttrs(["dex"], function(values) {
+        let bondex = parseInt(values.dex) || 0;
+        let defdex = bondex + 10;
+        setAttrs ({
+            def_dex: defdex
+        });
+    });
+});
+on("change:con", function() {
+    getAttrs(["con"], function(values) {
+        let boncon = parseInt(values.con) || 0;
+        let defcon = boncon + 10;
+        setAttrs ({
+            def_con: defcon
+        });
+    });
+});
+on("change:int", function() {
+    getAttrs(["int"], function(values) {
+        let bonint = parseInt(values.int) || 0;
+        let defint = bonint + 10;
+        setAttrs ({
+            def_int: defint
+        });
+    });
+});
+on("change:wis", function() {
+    getAttrs(["wis"], function(values) {
+        let bonwis = parseInt(values.wis) || 0;
+        let defwis = bonwis + 10;
+        setAttrs ({
+            def_wis: defwis
+        });
+    });
+});
+on("change:cha", function() {
+    getAttrs(["cha"], function(values) {
+        let boncha = parseInt(values.cha) || 0;
+        let defcha = boncha + 10;
+        setAttrs ({
+            def_cha: defcha
+        });
+    });
+});
+</script>

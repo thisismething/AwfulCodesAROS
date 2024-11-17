@@ -1,0 +1,115 @@
+/*전역 스타일*/
+.charsheet {
+    color: #222;
+    box-shadow: 0; text-shadow: 0;
+    --label_h: 15px;
+    --field_h: 27px;
+    --field_w: calc(var(--field_h) * 3);
+}
+.spacing {
+    height: 12px;
+    border: 3px solid white;
+}
+.grid {
+    display: grid;
+    align-table_items: stretch;
+    justify-table_items: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.label {
+    font-size: 8px; color: #222;
+    padding: 0;
+    text-align: center; align-self: end;
+}
+.field {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    line-height: var(--field_h);
+}
+/*입력 필드 스타일*/
+.charsheet input[type="text"], .charsheet input[type="number"] {
+    outline: none; border-radius: 0px;
+    padding: 0px; margin: 0;
+    text-align: center; color: #222;
+    border: 3px solid white;
+    width: 100%;
+}
+#num {
+    width: var(--field_w);
+}
+#num_s {
+    width: calc(var(--field_w)*0.5);
+}
+.charsheet input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none; margin: 0;
+}
+.charsheet input[type=number] {
+    -moz-appearance: textfield;
+}
+.charsheet textarea {
+    outline: none; 
+    resize:vertical;
+    margin: 0; padding: 3px;
+    vertical-align: top;
+    border: 3px solid white;
+    height: 21px; min-height: 21px; max-height: 7em;
+    text-align: center;
+}
+/*직업 특성*/
+.table_trade {
+    grid-template-columns: calc(var(--field_h)*6) var(--field_h) calc(var(--field_h)*5) calc(var(--field_h)*12) var(--field_h);
+}
+.table_trade textarea {
+    width:  calc(var(--field_h)*12 - 12px);
+}
+.avatar {
+    grid-row:span 6;
+    align-self: center;
+}
+.table5 {
+    grid-template-columns: var(--field_h) var(--field_h) calc(var(--field_h)*9.5) calc(var(--field_h)*9.5) var(--field_h);
+}
+.table5 input {
+    height: var(--field_h); line-height: var(--field_h);
+}
+.table5 textarea {
+    width: calc(var(--field_h)*9.5);
+}
+.pad3 {
+    padding: 3px;
+}
+/*플레이어, 가문 이름, 경험치, 레벨, HP, 사기*/
+.table_info {
+    grid-template-columns: calc(var(--field_w)*2) calc(var(--field_w)*2) var(--field_h) var(--field_w) var(--field_w) var(--field_w) var(--field_w);
+}
+.table_info input {
+    font-size: 1.5em;
+    line-height: calc(var(--field_h) * 1.3);
+}
+/*능력치, 갑옷, 무기*/
+.table_stats input {
+    line-height: var(--field_h);
+}
+.table_stats {
+    grid-template-columns: var(--field_w) var(--field_w) var(--field_w) var(--field_w) var(--field_h) calc(var(--field_w)*1.5) calc(var(--field_w)*0.5) var(--field_w) var(--field_w);
+}
+.attr_def {
+    width: var(--field_w);
+    height: var(--field_h); line-height: var(--field_h);
+    background-color: #f5f5f5;
+}
+.pad3030 {
+    padding: 3px 0 3px 0;
+}
+/*소지품*/
+.table_items {
+    grid-template-columns: var(--field_h) calc(var(--field_h)*20) var(--field_w) var(--field_h);
+}
+.table_items input, .table_trade input, .table5 input {
+    line-height: var(--field_h);
+}
+.table_items textarea {
+    width: calc(var(--field_h)*20 - 12px);
+}
